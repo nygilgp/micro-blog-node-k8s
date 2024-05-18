@@ -5,7 +5,7 @@ import { CommentList } from './CommentList';
 
 export const PostList = () => {
   const [posts, setposts] = useState({});
-  const url = 'http://localhost:4002/posts';
+  const url = 'http://posts.com/posts';
   useEffect(() => {
     (async () => {
       const response = await axios.get(url);

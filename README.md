@@ -92,3 +92,12 @@ Service => Provide easy to remember url to access a running container
     Redirects an in-cluster request to a CNAME url
 
 > kubectl get services
+
+### Load Balancer
+
+Tells kubernetes to reach out to its providers and provision a load balancer. Get traffic into a single pod.
+
+Ingress or Ingress controller:
+A pod with a set of routing rules to distribute traffic to other services.
+
+kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v1.10.1/deploy/static/provider/cloud/deploy.yaml

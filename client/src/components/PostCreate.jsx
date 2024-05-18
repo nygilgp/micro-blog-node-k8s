@@ -4,7 +4,7 @@ import { PostList } from './PostList';
 
 export const PostCreate = () => {
   const [title, setTitle] = useState('');
-  const url = 'http://localhost:4000/posts';
+  const url = 'http://posts.com/posts/create';
   const onSubmit = async (e) => {
     e.preventDefault();
     await axios.post(url, {
